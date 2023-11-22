@@ -721,6 +721,20 @@ footer {
         text-align: center;
     }
 
+    .content-two{
+        display: none;
+    }
+
+    .float-left-footer{
+        width: 100%;
+    }
+    .float-right-footer{
+        width: 100%;
+    }
+    .footer-float{
+        flex-direction: column;
+    }
+
     
 
 }
