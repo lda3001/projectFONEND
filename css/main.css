@@ -673,29 +673,27 @@ footer {
     }
 
     ul {
-        
+
         padding: 0;
         margin-top: 100px;
     }
 
     .main-menu {
         width: 100%;
-        flex-direction: column;
-        align-items: center;
         height: 100%;
         padding-top: 30px;
     }
 
     .main-menu>ul {
         flex-direction: column;
-        text-align: center;
-
-
+       
     }
 
     .main-menu>ul>li {
         border-bottom: 2px solid var(--primary-color);
         width: 100%;
+        height: auto;
+        padding: 15px;
     }
 
     .main-menu li:hover>ul.sub-menu,
@@ -703,7 +701,18 @@ footer {
         display: none !important;
         /* Adjust to hide sub-menus initially on small screens */
     }
-   
+
+    
+.main-menu>ul>li.tag-name::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 16px;
+    position: absolute;
+    color: var(--primary-color);
+    right: 20px;
+}
+
 
     .progress-container {
         position: fixed;
@@ -711,11 +720,13 @@ footer {
         left: 0;
         z-index: 3;
     }
-    .col-img{
+
+    .col-img {
         width: 100%;
         margin-bottom: 30px;
     }
-    .section-content{
+
+    .section-content {
         text-align: center;
     }
 
@@ -728,20 +739,22 @@ footer {
         display: none;
     }
 
-    .content-two{
+    .content-two {
         display: none;
     }
 
-    .float-left-footer{
+    .float-left-footer {
         width: 100%;
     }
-    .float-right-footer{
+
+    .float-right-footer {
         width: 100%;
     }
-    .footer-float{
+
+    .footer-float {
         flex-direction: column;
     }
 
-    
+
 
 }
