@@ -700,12 +700,10 @@ footer {
 
     .main-menu li:hover>ul.sub-menu,
     .main-menu li:hover>ul.sub-menu-tab2 {
-        display: none;
+        display: none !important;
         /* Adjust to hide sub-menus initially on small screens */
     }
-    .main-menu ul .sub-menu{
-        display: none;
-    }
+   
 
     .progress-container {
         position: fixed;
