@@ -721,6 +721,15 @@ footer {
         text-align: center;
     }
 
+    .section-title-main {
+        font-size: 28px;
+        margin: 0 auto;
+    }
+
+    .container b {
+        display: none;
+    }
+
     .content-two{
         display: none;
     }
