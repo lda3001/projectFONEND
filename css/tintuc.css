@@ -232,3 +232,18 @@ body{
     background: linear-gradient(to bottom right,#ffbe30,#ff3e00);
 }
 
+
+@media only screen and (max-width: 768px) {
+    .flex{
+        flex-direction: column;
+    }
+    .max-height{
+       padding: 0;
+    }
+    .col-slidebar-right{
+        margin-left: 60px;
+    }
+    
+
+}
+

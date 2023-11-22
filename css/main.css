@@ -695,6 +695,10 @@ footer {
         height: auto;
         padding: 15px;
     }
+    .main-menu>ul>li>a{
+        width: 80%;
+        height: 100%;
+    }
 
     .main-menu li:hover>ul.sub-menu,
     .main-menu li:hover>ul.sub-menu-tab2 {
