@@ -706,6 +706,13 @@ footer {
     .main-menu ul .sub-menu{
         display: none;
     }
+
+    .progress-container {
+        position: fixed;
+        top: 39px;
+        left: 0;
+        z-index: 3;
+    }
     .col-img{
         width: 100%;
         margin-bottom: 30px;
@@ -713,5 +720,7 @@ footer {
     .section-content{
         text-align: center;
     }
+
+    
 
 }
