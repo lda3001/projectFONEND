@@ -1,0 +1,717 @@
+:root {
+    --font: "Roboto", sans-serif;
+    --body-color: #333;
+    --heading-color: #212b36;
+    --primary-color: #f47421;
+    --white: #FFFfff;
+    --black: #333;
+    --black-primary: #000;
+    --yellow: #ffeb3b;
+    --yellow2: #ffcb08;
+    --orange: #ff5722;
+    --line-color: #c1bdbd;
+    --footer-color: #302f31;
+    --line-color-a: #f37423;
+    --cake-kitchen: var(--primary-color);
+    --bartending: #58a946;
+    --family-kitchen: #6b3b20;
+    --restaurant-manager: #0074bb;
+    --marketing-color: #016973;
+    --spa-color: #878d36;
+    --music-aau-color: #93193D;
+    --music-cet-color: #a98a53;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+}
+
+.header {
+    color: #000;
+    height: 44px;
+    /* background: linear-gradient(to right,#fabbe0, var(--primary-color) 21%, var(--primary-color) 21%, var(--primary-color) 78%,#fabbe0 100%); */
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 98;
+    display: flex;
+
+
+}
+
+.bars {
+    display: none;
+}
+
+.logo img {
+    max-height: 44px;
+    width: 173px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.main-menu {
+
+    display: flex;
+    margin-top: 10px;
+    width: 85%;
+
+}
+
+.main-menu>ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-menu>ul>li {
+    height: 36px;
+}
+
+.main-menu a {
+    margin: 0 14px;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font);
+    display: inline-block;
+
+}
+
+.main-menu ul .sub-menu {
+    position: absolute;
+    background-color: rgba(121, 103, 82, 0.85);
+    padding: 0px 0px;
+    list-style: none;
+    width: 300px;
+    border: 1px solid #FFD700;
+    display: none;
+    z-index: 99;
+    transition: 0.3s;
+    top: 2.5rem;
+}
+
+.main-menu ul.sub-menu-tab2 {
+    position: absolute;
+    background-color: rgba(121, 103, 82, 0.85);
+    padding: 0px 0px;
+    list-style: none;
+    width: 300px;
+    border: 1px solid #FFD700;
+    display: none;
+    z-index: 99;
+    transition: 0.3s;
+
+}
+
+
+
+.nav-sidebar-ul {
+    left: 18.7rem !important;
+    margin-top: -50px;
+
+
+}
+
+.main-menu li:hover>ul.sub-menu {
+    display: block !important;
+
+}
+
+.main-menu li:hover>ul.sub-menu-tab2 {
+    display: block !important;
+
+}
+
+.search-button {
+    width: 46px;
+}
+
+.absolute {
+    position: absolute;
+    left: 50px !important;
+    display: none !important;
+    top: -4px;
+}
+
+.search-button:hover .name-search {
+    display: block !important;
+    margin-left: -16rem;
+    width: 350px;
+    padding: 5px;
+    outline: none;
+
+}
+
+.name-search::placeholder {
+    font-family: roboto;
+    color: var(--primary-color);
+}
+
+.abso {
+    position: absolute;
+
+}
+
+.effect-sparkle {
+    background-image: url(../images/sparkle1.png), url(../images/sparkle2.png);
+    animation: sparkle 60s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+}
+
+@keyframes sparkle {
+    0% {
+        background-position: 0 0, 0 0, 0 0
+    }
+
+    100% {
+        background-position: -500px -1000px, -400px -400px, 300px 300px
+    }
+}
+
+.auto-type {
+    color: var(--primary-color);
+
+}
+
+.typing {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.search-button:hover .absolute {
+    display: block !important;
+    margin-left: -5px;
+}
+
+.main-menu ul.sub-menu>li a {
+    padding: 8px 15px;
+    left: 0px;
+    font-size: 12px;
+}
+
+.sub-menu li {
+    border-bottom: 1px solid #FFD700;
+    padding: 7px;
+}
+
+.sub-menu li>a {
+    width: 100%;
+
+
+}
+
+.sub-menu li>a:hover {
+    width: 100%;
+    color: #FFD700;
+
+}
+
+.sub-menu li:hover {
+    background-color: var(--primary-color);
+
+
+
+}
+
+
+.main-menu>ul>li.tag-name::after {
+    content: "\f107";
+    /* Mã Unicode của biểu tượng Font Awesome bạn muốn sử dụng */
+    font-family: "Font Awesome 5 Free";
+    /* Tên font của Font Awesome */
+    font-weight: 900;
+    /* Trọng số font */
+    font-size: 16px;
+    /* Kích thước font */
+    margin-left: -10px;
+    color: var(--primary-color);
+}
+
+.main-menu>ul>li>ul>li.tag-name::after {
+    content: "\f054";
+    /* Mã Unicode của biểu tượng Font Awesome bạn muốn sử dụng */
+    font-family: "Font Awesome 5 Free";
+    /* Tên font của Font Awesome */
+    font-weight: 900;
+    /* Trọng số font */
+    font-size: 16px;
+    /* Kích thước font */
+    margin-left: -3.5rem;
+    color: var(--primary-color);
+}
+
+.ma .main-menu .sub-menu li:hover a {
+    color: #FFD700;
+}
+
+.main-menu ul .sub-menu li:last-child a {
+    border-bottom: none;
+}
+
+.main-menu>li>a {
+    position: relative;
+}
+
+/* .main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+ } */
+/* #main-menu>li:hover>a::before{
+    width: 100%;
+ }
+  */
+
+.fa-search {
+    color: var(--white);
+    padding: 15px;
+    left: 0px;
+}
+
+.absolute .fa-search {
+    color: var(--white);
+}
+
+.absolute .fa-search::before {
+    background-color: var(--bartending);
+    padding: 10px;
+}
+
+
+.fa-shopping-cart {
+    color: var(--white);
+    padding: 15px;
+
+}
+
+.fa-shopping-cart:before {
+    background-color: var(--primary-color);
+    padding: 6px;
+    border-radius: 2px;
+}
+
+.extention {
+    display: flex;
+    position: absolute;
+    right: 0px;
+
+
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    padding-left: 30px;
+
+}
+
+.header .menu {
+    font-family: Italianno;
+    font-size: 40px;
+    font-weight: 400;
+    transform: translate(-60px);
+}
+
+.progress-container {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: 0 0;
+    z-index: 99;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: var(--primary-color);
+    width: 0;
+
+    transition-delay: 0.003s;
+    /* Độ trễ để tạo hiệu ứng mượt mà hơn */
+}
+
+
+.cirlce {
+    border-radius: 50%;
+    border: 1px solid var(--black);
+    padding: 15px;
+    opacity: 0.5;
+}
+
+.cirlce:hover {
+    background-color: var(--orange);
+    opacity: 1;
+    border: none;
+}
+
+.image {
+    text-align: center;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
+
+
+
+/* .title {
+    border: 1px solid #000;
+    background: rgba(207, 46, 46, 0.20);
+    padding: 17px 35px;
+    color: #000;
+    text-align: center;
+    font-family: JejuHallasan;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+} */
+
+.title2 {
+    border: 1px solid #000;
+    width: 624px;
+    padding: 17px 35px;
+    color: #000;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: JejuHallasan;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+.main-content {
+    width: 100%;
+    color: var(--primary-color);
+    text-align: center;
+    top: 150px;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+}
+
+
+
+
+.carousel-item img {
+    height: 670px;
+}
+
+.img-cake {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 3rem;
+
+}
+
+.col-img {
+    width: 30%;
+    background-color: var(--white);
+
+    overflow: hidden;
+    box-shadow: 0 0 12px #141414;
+
+}
+
+.col3 {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-img img {
+    width: 100%;
+    transition: transform .2s;
+    /* Animation */
+    max-height: 300px;
+
+
+}
+
+.col-img img:hover {
+    transform: scale(1.1);
+}
+
+#section_main {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: rgb(199, 199, 199);
+    margin-top: 3rem;
+}
+
+.section {
+    position: relative;
+}
+
+.ux-shape-divider--top {
+    top: -1px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.ux-shape-divider {
+    --divider-top-width: 100%;
+    --divider-width: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    top: -1px;
+
+}
+
+.ux-shape-fill {
+    fill: var(--white);
+}
+
+.section-content {
+    color: var(--primary-color);
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.section-title-main {
+    padding-bottom: 1.25px;
+    border-bottom: 3px solid var(--primary-color);
+    font-family: var(--font);
+    font-size: 30px;
+
+
+}
+
+.border-bottom-container {
+    border-bottom: 2px solid var(--white);
+}
+
+.relative {
+    position: relative;
+}
+
+.col-img p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 15px;
+    font-family: sans-serif;
+
+}
+
+
+.col-img a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.col-img a:hover {
+    color: var(--primary-color);
+}
+
+.button-detail {
+
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.button-detail a {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.button-detail a:hover {
+
+    color: black;
+}
+
+.btn {
+
+    border: 0;
+    border-bottom: 4px solid #c53434;
+}
+
+.btn-action {
+    background-color: #ff7777;
+    border-color: #c53434;
+    text-shadow: 1px 1px 0 #ff0000;
+
+}
+
+.container b {
+    display: block;
+    flex: 1;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-left: 7rem;
+    margin-top: 33px;
+}
+
+.flexs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-two {
+    padding-top: 4rem;
+}
+
+.float-left-footer {
+    width: 50%;
+    margin-top: 30px;
+
+    text-align: center;
+
+}
+
+.float-right-footer {
+    text-align: center;
+    width: 50%;
+    margin-top: 30px;
+
+}
+
+.footer-float {
+    display: flex;
+}
+
+
+footer {
+
+    background: var(--primary-color);
+}
+
+.contact svg {
+    margin-right: 40px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .main-menu {
+        display: none;
+    }
+}
+
+/* Original styles */
+
+/* ... (Your existing styles) ... */
+
+/* Responsive styles */
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: auto;
+
+
+    }
+
+    .bars {
+        display: inline-block;
+        padding: 6px 0 0 15px;
+        font-size: 20px;
+        color: var(--white);
+        z-index: 9999;
+    }
+
+    .logo {
+        margin: 0 auto;
+        padding-right: 40px;
+    }
+
+    .slogan {
+        width: 100%;
+    }
+
+    .main-menu {
+        position: fixed;
+        z-index: 999;
+        background-color: var(--bartending);
+        top: -10px;
+    }
+
+    ul {
+        
+        padding: 0;
+        margin-top: 100px;
+    }
+
+    .main-menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .main-menu>ul {
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    .main-menu>ul>li {
+        border-bottom: 2px solid var(--primary-color);
+        width: 100%;
+    }
+
+    .main-menu li:hover>ul.sub-menu,
+    .main-menu li:hover>ul.sub-menu-tab2 {
+        display: none;
+        /* Adjust to hide sub-menus initially on small screens */
+    }
+    .main-menu ul .sub-menu{
+        display: none;
+    }
+    .col-img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .section-content{
+        text-align: center;
+    }
+
+}
