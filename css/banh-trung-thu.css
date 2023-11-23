@@ -2,7 +2,7 @@
 .section-title-main {
     width: 100%;
     border-bottom: 0;
-    margin-bottom: 0.5em;
+    margin: 1em 0;
 
 }
 
@@ -119,6 +119,63 @@ p {
 .owl-dots{
     display: none !important;
 }
+
+.accordion-section-box .accordion-title.active h2:before {
+    content: "\f022"; 
+    font-family: 'Font Awesome 5 Free';
+    color: #333;
+    font-size: 14px;
+   
+    
+}
+
+ol {
+    counter-reset: my-counter;
+    padding: 10px 0 0;
+}
+
+ol>li {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 32px;
+}
+ol>li>ol>li a{
+    font-size: 14px !important;
+    color: #000 !important;
+    
+}
+
+ol>li:before {
+    content: counter(my-counter);
+    display: inline-block;
+    width: 1.5em; /* Cài đặt độ rộng để giữ chỗ cho số thứ tự */
+    margin-right: 5px;
+}
+
+ol>li>ol>li:before {
+    content: "2."counter(my-counter);
+    display: inline-block;
+    width: 1.5em; 
+    margin-right: 5px;
+    color: #000;
+}
+
+ol>li.tag-name::after {
+    content: "\f107" ;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 16px;
+    position: absolute;
+    color: var(--primary-color);
+    top: 41%;
+    left: 12px;
+}
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 990px)  {

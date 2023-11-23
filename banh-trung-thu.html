@@ -26,6 +26,7 @@
         href="https://fonts.googleapis.com/css2?family=Crafty Girls:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/tintuc.css">
+    <link rel="stylesheet" href="css/hoc-nau-an.css">
     <link rel="stylesheet" href="css/banh-trung-thu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -38,10 +39,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
         integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
@@ -544,10 +541,57 @@
                                     </div>
                                 </div>
                         </section>
+                        <div class="col-sm-12">
+                            <div class="accordion accordion-section-box">
+                                <div class="accordion-item list-turtorial">
+                                    <a class="accordion-title plain active" id="accordion"
+                                        onclick="FallinOut('accordion-inner')">
+                                        
+                                        <h2>Mục Lục</h2>
+                                    </a>
+                                    <div class="accordion-inner" id="accordion-inner" style="display: block;">
+                                        <ol style="list-style: none; padding-left: 0;">
+                                            <li style="list-style: none; counter-increment: my-counter;">
+                                                <a href="#nguyen-lieu-lam-banh-trung-thu-han-quoc">Nguyên liệu làm bánh Trung thu Hàn Quốc</a>
+                                            </li>
+                                            <li style="list-style: none; counter-increment: my-counter;">
+                                                <a href="">Hướng dẫn cách làm bánh Trung thu Hàn Quốc độc đáo, hấp dẫn</a>
+                                                <ol style="list-style: none; padding-left: 0;" class="sub-list">
+                                                    <li style="list-style: none; counter-increment: my-counter;">
+                                                        <a href="">Hướng dẫn cách làm bánh Trung thu Hàn Quốc độc đáo, hấp dẫn</a>
+                                                    </li>
+                                                    <li style="list-style: none; counter-increment: my-counter;">
+                                                        <a href="">Hướng dẫn cách làm bánh Trung thu Hàn Quốc độc đáo, hấp dẫn</a>
+                                                    </li>
+                                                    <li style="list-style: none; counter-increment: my-counter;">
+                                                        <a href="">Hướng dẫn cách làm bánh Trung thu Hàn Quốc độc đáo, hấp dẫn</a>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li style="list-style: none; counter-increment: my-counter;">
+                                                <a href="">Yêu cầu thành phẩm</a>
+                                            </li>
+                                            <li style="list-style: none; counter-increment: my-counter;">
+                                                <a href="">Lưu ý khi làm bánh Trung thu Hàn Quốc</a>
+                                            </li>
+                                        </ol>
+                                        
+                                        
+                                        
+                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h4 id="nguyen-lieu-lam-banh-trung-thu-han-quoc" >Nguyên liệu làm bánh Trung thu Hàn Quốc</h4>
+                        </div>
+                        
 
 
 
-                        <h2 style="clear:left;"></h2>
+                       
 
 
 
@@ -1085,7 +1129,8 @@
         $(document).ready(function () {
             $('.sub-menu').parent('li').addClass('tag-name')
             $('.sub-menu-tab2').parent('li').addClass('tag-name')
-
+            $('.sub-list').parent('li').addClass('tag-name')
+            
         });
         function submitForm() {
             var ratingValue = $('input[name="we_schema_rating_vote"]:checked').val();
