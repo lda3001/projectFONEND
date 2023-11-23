@@ -18,11 +18,7 @@
     background-size: 225px;
 } */
 
-.heading-line {
-    position: absolute;
-    left: 40rem;
-    top: 7em;
-}
+
 
 .fa-user {
     border: 1px solid var(--primary-color);
@@ -130,9 +126,5 @@ p {
         width: 100%;
     }
    
-    .heading-line{
-        left: 23%;
-        top: 8em;
-    }
     
 }
