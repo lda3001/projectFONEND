@@ -232,13 +232,11 @@ tr{
 }
 
 @media only screen and (max-width: 990px)  {
-    .col-img{
+    .col-img ,#accordion-inner-2 .img-cake .col-img,#accordion-inner-3 .img-cake .col-img,iframe{
         width: 100%;
     }
-    #accordion-inner-2 .img-cake .col-img,#accordion-inner-3 .img-cake .col-img{
-        width: 100%;
-     
-    }
+   
+    
     
 }
 
