@@ -21,15 +21,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=JejuHallasan:wght@400;500;600;700&display=swap">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Crafty Girls:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/tintuc.css">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
@@ -350,7 +349,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div>
@@ -501,7 +500,35 @@
                             </div>
                         </div>
                     </div>
+                    <h2 style="clear:left;"></h2>
+                    <section class="rating-section">
+                        <div class="row">
+                            <div class="col small-12 large-12">
+                                <form id="we_schema_rating" method="post" action="#">
+                                    <div class="we_schema_rating">
+                                        <input name="we_schema_rating_vote" type="radio" id="we_schema_rating5" value="5" checked="checked">
+                                        <label for="we_schema_rating5" title="5 stars">☆</label>
+                                        <input name="we_schema_rating_vote" type="radio" id="we_schema_rating4" value="4">
+                                        <label for="we_schema_rating4" title="4 stars">☆</label>
+                                        <input name="we_schema_rating_vote" type="radio" id="we_schema_rating3" value="3">
+                                        <label for="we_schema_rating3" title="3 stars">☆</label>
+                                        <input name="we_schema_rating_vote" type="radio" id="we_schema_rating2" value="2">
+                                        <label for="we_schema_rating2" title="2 stars">☆</label>
+                                        <input name="we_schema_rating_vote" type="radio" id="we_schema_rating1" value="1">
+                                        <label for="we_schema_rating1" title="1 stars">☆</label>
+                                    </div>
+                                    <p class="result_msg">Điểm: 4.9 (31 bình chọn)</p>
+                                    <div class="submit-success">
+                                        <p class="error_msg" style="display: none"></p>
+                                        <p class="success_msg" style="display: none">Cảm ơn đã bình chọn!</p>
+                                    </div>
+                                    <button type="button" onclick="submitForm()">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+
                 <div class="col-sm-3 page-wrapper" style="background-color: #fff;min-height: 30px;">
                     <div id="secondary" class="widget-area " role="complementary">
                         <aside id="text-2" class="sidebar-banner-register widget widget_text">
@@ -943,7 +970,7 @@
     </div>
 
 
-    
+
     <footer id="footer">
         <div class="container footer-float">
             <div class="float-left-footer">
@@ -956,18 +983,18 @@
                     Điện thoại : 0377579953 <br>
                     Email: leanhthuongx7@gmail.com</p>
             </div>
-           
+
             <div class="float-right-footer">
                 <h1 style="text-transform: uppercase;font-size: 26px;font-family: 700;">Liên Kết</h1>
                 <div class="contact">
-                    <a href="https://www.facebook.com/leducanhit.org"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
-                            fill="none">
+                    <a href="https://www.facebook.com/leducanhit.org"><svg xmlns="http://www.w3.org/2000/svg" width="60"
+                            height="60" viewBox="0 0 60 60" fill="none">
                             <path
                                 d="M59.0625 30C59.0625 13.9453 46.0547 0.9375 30 0.9375C13.9453 0.9375 0.9375 13.9453 0.9375 30C0.9375 44.5055 11.5652 56.5289 25.459 58.7109V38.4012H18.0762V30H25.459V23.5969C25.459 16.3137 29.7949 12.2906 36.4359 12.2906C39.6164 12.2906 42.9422 12.8578 42.9422 12.8578V20.0063H39.2766C35.6672 20.0063 34.541 22.2469 34.541 24.5449V30H42.6012L41.3121 38.4012H34.541V58.7109C48.4348 56.5289 59.0625 44.5055 59.0625 30Z"
                                 fill="black" />
                         </svg></a>
-                    <a href="https://www.instagram.com/ldda3001"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
-                            fill="none">
+                    <a href="https://www.instagram.com/ldda3001"><svg xmlns="http://www.w3.org/2000/svg" width="60"
+                            height="60" viewBox="0 0 60 60" fill="none">
                             <g clip-path="url(#clip0_20_49)">
                                 <path
                                     d="M30.0134 16.5234C21.4955 16.5234 14.625 22.5352 14.625 29.9883C14.625 37.4414 21.4955 43.4531 30.0134 43.4531C38.5313 43.4531 45.4018 37.4414 45.4018 29.9883C45.4018 22.5352 38.5313 16.5234 30.0134 16.5234ZM30.0134 38.7422C24.5089 38.7422 20.0089 34.8164 20.0089 29.9883C20.0089 25.1602 24.4955 21.2344 30.0134 21.2344C35.5313 21.2344 40.0179 25.1602 40.0179 29.9883C40.0179 34.8164 35.5179 38.7422 30.0134 38.7422ZM49.6205 15.9727C49.6205 17.7187 48.0134 19.1133 46.0313 19.1133C44.0357 19.1133 42.442 17.707 42.442 15.9727C42.442 14.2383 44.0491 12.832 46.0313 12.832C48.0134 12.832 49.6205 14.2383 49.6205 15.9727ZM59.8125 19.1602C59.5848 14.9531 58.4866 11.2266 54.9643 8.15625C51.4554 5.08594 47.1964 4.125 42.3884 3.91406C37.433 3.66797 22.5804 3.66797 17.625 3.91406C12.8304 4.11328 8.57143 5.07422 5.04911 8.14453C1.52679 11.2148 0.441969 14.9414 0.200897 19.1484C-0.0803528 23.4844 -0.0803528 36.4805 0.200897 40.8164C0.428576 45.0234 1.52679 48.75 5.04911 51.8203C8.57143 54.8906 12.817 55.8516 17.625 56.0625C22.5804 56.3086 37.433 56.3086 42.3884 56.0625C47.1964 55.8633 51.4554 54.9023 54.9643 51.8203C58.4732 48.75 59.5714 45.0234 59.8125 40.8164C60.0938 36.4805 60.0938 23.4961 59.8125 19.1602ZM53.4107 45.4687C52.3661 47.7656 50.3438 49.5352 47.7054 50.4609C43.7545 51.832 34.3795 51.5156 30.0134 51.5156C25.6473 51.5156 16.2589 51.8203 12.3214 50.4609C9.69643 49.5469 7.67411 47.7773 6.61608 45.4687C5.04911 42.0117 5.41072 33.8086 5.41072 29.9883C5.41072 26.168 5.0625 17.9531 6.61608 14.5078C7.66072 12.2109 9.68304 10.4414 12.3214 9.51562C16.2723 8.14453 25.6473 8.46094 30.0134 8.46094C34.3795 8.46094 43.7679 8.15625 47.7054 9.51562C50.3304 10.4297 52.3527 12.1992 53.4107 14.5078C54.9777 17.9648 54.6161 26.168 54.6161 29.9883C54.6161 33.8086 54.9777 42.0234 53.4107 45.4687Z"
@@ -979,8 +1006,8 @@
                                 </clipPath>
                             </defs>
                         </svg></a>
-                    <a href="https://zalo.me/0377579953"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
-                            fill="none">
+                    <a href="https://zalo.me/0377579953"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                            viewBox="0 0 60 60" fill="none">
                             <path
                                 d="M57.2557 14.541C56.6015 11.7695 54.6738 9.58676 52.2262 8.84602C47.7897 7.5 30 7.5 30 7.5C30 7.5 12.2104 7.5 7.77386 8.84602C5.32626 9.58687 3.39855 11.7695 2.74428 14.541C1.55553 19.5645 1.55553 30.0455 1.55553 30.0455C1.55553 30.0455 1.55553 40.5265 2.74428 45.55C3.39855 48.3214 5.32626 50.4132 7.77386 51.154C12.2104 52.5 30 52.5 30 52.5C30 52.5 47.7896 52.5 52.2262 51.154C54.6738 50.4132 56.6015 48.3214 57.2557 45.55C58.4445 40.5265 58.4445 30.0455 58.4445 30.0455C58.4445 30.0455 58.4445 19.5645 57.2557 14.541ZM24.1818 39.5614V20.5295L39.0504 30.0457L24.1818 39.5614Z"
                                 fill="black" />
@@ -1008,7 +1035,23 @@
             $('.sub-menu-tab2').parent('li').addClass('tag-name')
 
         });
+        function submitForm() {
+        var ratingValue = $('input[name="we_schema_rating_vote"]:checked').val();
+        
+        $.ajax({
+            type: "POST",
+            url: "ratings.php", 
+            data: { we_schema_rating_vote: ratingValue },
+            success: function(response) {
+                $(".success_msg").show().text(response);
+            },
+            error: function() {
+                $(".error_msg").show().text("Lỗi: Không thể gửi đánh giá.");
+            }
+        });
+    }
     </script>
+    
     <script src="js/app.js"></script>
 
 

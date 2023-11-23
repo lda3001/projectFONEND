@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Bánh Trung Thu",
+    "image_url": "images/banhtrungthu.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bánh Kem",
+    "image_url": "images/banhsinhnhat.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bánh Việt",
+    "image_url": "images/banhviet.jpg"
+  }
+]

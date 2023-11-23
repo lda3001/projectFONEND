@@ -232,6 +232,77 @@ body{
     background: linear-gradient(to bottom right,#ffbe30,#ff3e00);
 }
 
+#we_schema_rating {
+    clear: both;
+    margin-bottom: 10px;
+    padding : 0 10px;
+}
+
+.we_schema_rating {
+    --star-size: 2;
+    padding: 0;
+    border: none;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+    user-select: none;
+    font-size: 2em;
+    font-size: calc(var(--star-size) * 1em);
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    margin-bottom: 0;
+    height: calc(var(--star-size)/2);
+    line-height: calc(var(--star-size)/2)
+}
+
+.we_schema_rating>label {
+    display: inline-block;
+    position: relative;
+    width: calc(var(--star-size) / 3 * 1.3em);
+    margin-bottom: 0;
+    margin-right: 3px
+}
+
+.we_schema_rating>*:hover,.we_schema_rating>*:hover~label,.we_schema_rating:not(:hover)>input:checked~label {
+    color: transparent;
+    cursor: inherit;
+    background: transparent
+}
+
+.we_schema_rating>*:hover:before,.we_schema_rating>*:hover~label:before,.we_schema_rating:not(:hover)>input:checked~label:before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: gold
+}
+
+.we_schema_rating>input {
+    position: relative;
+    transform: scale(3);
+    transform: scale(var(--star-size));
+    top: -.5em;
+    top: calc(var(--star-size) / 6 * -1em);
+    margin-left: -2.5em;
+    margin-left: calc(var(--star-size) / 6 * -5em);
+    z-index: 2;
+    opacity: 0;
+    font-size: initial;
+    margin-right: 0
+}
+
+#we_schema_rating .result_msg,#we_schema_rating .error_msg,#we_schema_rating .sucess_msg {
+    margin: 5px 0
+}
+
+#we_schema_rating .error_msg {
+    color: red
+}
+
+#we_schema_rating .sucess_msg {
+    color: green
+}
+
 
 @media only screen and (max-width: 768px) {
     .flex{
