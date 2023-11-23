@@ -141,10 +141,12 @@ h1.two-line-h1 span:nth-child(3) {
 .accordion.accordion-section-box {
     position: relative;
     box-shadow: 2px 2px 10px #595959a3;
-    margin-bottom: 10px;
+   
     border-radius: 5px;
     border-bottom: 2px solid var(--primary-color);
     margin: 0 10px;
+    margin-top: 30px;
+
 }
 
 .accordion-section-box a{
@@ -160,6 +162,7 @@ h1.two-line-h1 span:nth-child(3) {
     font-size: 20px;
     
 }
+
 
 .accordion-section-box .accordion-title, .accordion-section-box .accordion-title.active {
     
@@ -212,10 +215,30 @@ tr{
     text-align: center;
 }
 
+#accordion-inner-2 .img-cake .col-img,#accordion-inner-3 .img-cake .col-img{
+    width: 30%;
+   overflow: hidden;
+}
+
+#accordion-inner-2 .img-cake .col-img:hover,#accordion-inner-3 .img-cake .col-img:hover{
+    transform: none;
+}
+#accordion-inner-3 .img-cake .col-img img:hover{
+    transform: scale(1.2);
+}
+
+.iframe{
+    width: 100%;
+}
 
 @media only screen and (max-width: 990px)  {
     .col-img{
         width: 100%;
     }
+    #accordion-inner-2 .img-cake .col-img,#accordion-inner-3 .img-cake .col-img{
+        width: 100%;
+     
+    }
+    
 }
 

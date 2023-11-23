@@ -82,6 +82,10 @@ body {
 
 }
 
+.main-menu a:hover{
+    color:var(--primary-color);
+}
+
 .main-menu ul .sub-menu {
     position: absolute;
     background-color: rgba(121, 103, 82, 0.85);
@@ -469,7 +473,7 @@ body {
 #section_main {
     padding-top: 20px;
     padding-bottom: 50px;
-    background-color: rgb(199, 199, 199);
+    background-color: var(--line-color);
     margin-top: 3rem;
 }
 

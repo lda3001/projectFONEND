@@ -22,18 +22,18 @@ $(document).ready(function () {
 
 })
 
-function FallinOut() {
-    var x = document.getElementById("accordion-inner");
-    if (x.style.display == "block") {
+function FallinOut(targetId) {
+    var x = document.getElementById(targetId);
 
-        $('#accordion-inner').slideToggle();
-        $('.accordion-title').removeClass('active');
+    if (x.style.display === "block") {
+        $('#' + targetId).slideToggle();
+        $('#' + targetId).prev('.accordion-title').removeClass('active');
     } else {
-        $('#accordion-inner').slideToggle();
-        $('.accordion-title').addClass('active');
+        $('#' + targetId).slideToggle();
+        $('#' + targetId).prev('.accordion-title').addClass('active');
     }
-
 }
+
 
 
 
