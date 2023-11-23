@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var progressBar = document.getElementById('progressBar');
+$(document).ready(function () {
+    var progressBar = $('#progressBar');
 
-    window.onscroll = function () {
+    $(window).scroll(function () {
         updateProgressBar();
-    };
+    });
 
     function updateProgressBar() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrollTop = $(document).scrollTop();
+        var scrollHeight = $(document).height() - $(window).height();
         var progress = (scrollTop / scrollHeight) * 100;
-        progressBar.style.width = progress + '%';
+        progressBar.css('width', progress + '%');
     }
 });
 
