@@ -1,0 +1,138 @@
+.section-title,
+.section-title-main {
+    width: 100%;
+    border-bottom: 0;
+    margin-bottom: 0.5em;
+
+}
+
+
+/* .section-title,.section-title-main:after{
+    content: "";
+    background-image: url(https://www.huongnghiepaau.com/wp-content/themes/huongnghiepaau-child/assets/images/heading-line.png);
+    width: 100%;
+    display: block;
+    height: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 225px;
+} */
+
+.heading-line {
+    position: absolute;
+    left: 40rem;
+    top: 7em;
+}
+
+.fa-user {
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 7px;
+    font-size: 12px;
+}
+
+.author-date-box-meta {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.author-date-box-meta a {
+    font-size: 16px;
+}
+
+p {
+    color: var(--body-color);
+    line-height: 20px;
+}
+
+
+
+#demos {
+
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.box-text {
+    top: 50%;
+
+    font-size: 15px;
+    width: 99%;
+    background-image: linear-gradient(transparent, #000 80%);
+}
+
+.button-register {
+    margin: 15px;
+}
+
+.item {
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    white-space: normal;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+
+.post-title {
+    color: var(--white);
+
+}
+
+.post-title:hover {
+    color: #ffe500;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.owl-prev,
+.owl-next {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #5c4c4b !important;
+    border-radius: 50% !important;
+    background-color: #5c4c4b !important;
+    padding: 0 0 2px 0 !important;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+   
+    background-color: var(--primary-color) !important;
+}
+
+.owl-prev span,
+.owl-next span{
+    font-size: 30px;
+}
+
+.owl-dots{
+    display: none !important;
+}
+
+
+@media only screen and (max-width: 990px)  {
+    p img {
+        width: 100%;
+    }
+   
+    .heading-line{
+        left: 23%;
+        top: 8em;
+    }
+    
+}

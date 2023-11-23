@@ -231,6 +231,8 @@ tr{
     width: 100%;
 }
 
+
+
 @media only screen and (max-width: 990px)  {
     .col-img ,#accordion-inner-2 .img-cake .col-img,#accordion-inner-3 .img-cake .col-img,iframe{
         width: 100%;
