@@ -110,7 +110,11 @@ h1.two-line-h1 span:nth-child(3) {
 .img-cake{
     float: none;
     padding: 10px ;
-    margin-top: 10px;
+    margin: 10px 11px;
+}
+
+#accordion-inner-2 .img-cake,#accordion-inner-3 .img-cake,#accordion-inner-4 .img-cake{
+    margin: 10px 0 0 35px;
 }
 
 .col-img{

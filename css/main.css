@@ -582,6 +582,12 @@ body {
 
 }
 
+.btn-action:hover, .btn-action:focus {
+    background-color: #ff3e3e;
+    border-color: #c30000;
+    color: #ffe500 !important;
+}
+
 .container b {
     display: block;
     flex: 1;

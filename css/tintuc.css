@@ -46,6 +46,10 @@ body{
    
 }
 
+.divider{
+    padding: 0 7px;
+}
+
 #content{
     background-color: #fff;
     float: left;
