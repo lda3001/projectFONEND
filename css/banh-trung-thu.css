@@ -171,6 +171,11 @@ ol>li.tag-name::after {
     left: 12px;
 }
 
+.item .button-register a {
+    padding:6px;
+    font-size:16px;
+}
+
 
 
 
