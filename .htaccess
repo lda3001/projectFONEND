@@ -1,0 +1,15 @@
+Options +FollowSymLinks 
+ServerSignature Off
+RewriteEngine On 				 
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Lỗi không tồn tại
+ErrorDocument 404 /error.html
+
+ErrorDocument 402 /error.html
+ErrorDocument 403 /error.html
+ErrorDocument 404 /error.html
+ErrorDocument 500 /error.html
+Options All -Indexes
+

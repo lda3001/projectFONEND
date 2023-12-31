@@ -640,9 +640,9 @@ footer {
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1460px) {
     .main-menu a{
-        font-size: 11px;
+        font-size: 16px;
         margin: 0 8px;
         font-weight: 400;
     }
@@ -652,6 +652,21 @@ footer {
     
 }
 
+@media screen and (max-width: 1280px) {
+    .main-menu a{
+        font-size: 12px;
+        margin: 0 8px;
+        font-weight: 400;
+    }
+    .main-menu>ul {
+        padding:0 ;
+    }
+    
+}
+
+
+@media screen and (max-width: 1150px) {
+}
 
 
 @media only screen and (max-width: 990px)  {

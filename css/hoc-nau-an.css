@@ -241,6 +241,12 @@ tr{
     .col-img ,#accordion-inner-2 .img-cake .col-img,#accordion-inner-3 .img-cake .col-img,iframe{
         width: 100%;
     }
+    #accordion-inner-2 .img-cake,#accordion-inner-3 .img-cake {
+             margin: 10px 0 0 10px;
+    }
+    #accordion-inner-4{
+        margin :0 0 0 -28px;
+    }
    
     
     
