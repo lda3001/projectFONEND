@@ -194,6 +194,7 @@ body {
 }
 
 
+
 .search-button:hover .absolute {
     display: block !important;
     margin-left: -5px;
@@ -416,7 +417,7 @@ body {
     color: var(--primary-color);
     text-align: center;
     top: 3rem;
-   
+   height: max-content;
     bottom: 0;
     margin: 0 auto;
     font-size: 24px;
@@ -427,12 +428,71 @@ body {
 
 }
 
+.statictic li{
+    list-style: none;
+    border: 1px solid var(--white);
+}
+
 
 
 
 .carousel-item img {
     height: auto;
 }
+
+
+section{
+    position: relative;
+   
+}
+
+ .carousel {
+  background: var(--black);
+  width: 100%;
+  margin: auto;
+}
+@media screen and ( min-width: 768px ) {
+
+    .carousel-cell { width: 25%; }
+  }
+
+  .carousel-cell {
+    width: 25%;
+    height: 200px;
+    margin-right: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    border-radius: 5px;
+    
+  }
+
+
+
+
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.carousel-cell.is-selected {
+  opacity: var(--black) !important;
+  
+}
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+} */
+
+
+
+
+
 
 .img-cake {
     margin: 0 auto;
@@ -525,9 +585,7 @@ body {
     border-bottom: 2px solid var(--white);
 }
 
-.relative {
-    position: relative;
-}
+
 
 .col-img p {
     font-size: 18px;
@@ -597,11 +655,7 @@ body {
     margin-top: 33px;
 }
 
-.flexs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .section-two {
     padding-top: 4rem;
@@ -701,7 +755,9 @@ footer {
         margin: 0 auto;
         padding-right: 40px;
     }
-
+    .col-3{
+        width: 50%;
+    }
     .slogan {
         width: 100%;
     }
