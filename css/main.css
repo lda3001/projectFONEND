@@ -443,6 +443,12 @@ body {
     list-style: none;
     border: 1px solid var(--white);
 }
+.flickity-prev-next-button.previous {
+    left: -20px !important;
+}
+.flickity-prev-next-button.next {
+    right: -20px !important;
+}
 
 
 
@@ -507,6 +513,7 @@ section{
   outline: none;
   box-shadow: 0 0 0 5px #19F;
 } */
+
 
 
 
@@ -761,7 +768,16 @@ footer {
     object-fit: cover;
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
 } */
-
+.paragraph{
+    min-height: 296px;
+}
+.trainning .col-3{
+    width :100%;
+}
+.statictic li {
+    width:47%;
+    margin-top: 10px;
+}
     .bars {
         display: inline-block;
         padding: 6px 0 0 15px;
@@ -794,7 +810,7 @@ footer {
     ul {
 
         padding: 0;
-        margin-top: 100px;
+        
     }
 
     .main-menu {
