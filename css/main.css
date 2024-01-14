@@ -172,6 +172,9 @@ body {
     bottom: 0;
     opacity: .5;
 }
+.flickity-page-dots .dot {
+    background:var(--white) !important
+}
 
 @keyframes sparkle {
     0% {
@@ -459,6 +462,14 @@ section{
   width: 100%;
   margin: auto;
 }
+.paragraph{
+    min-height: 200px;
+}
+.text-center a{
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
 @media screen and ( min-width: 768px ) {
 
     .carousel-cell { width: 25%; }
@@ -466,7 +477,7 @@ section{
 
   .carousel-cell {
     width: 25%;
-    height: 200px;
+    height: 340px;
     margin-right: 10px;
     background-size: 100%;
     background-repeat: no-repeat;
