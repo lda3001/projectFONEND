@@ -780,6 +780,9 @@ footer {
     .slogan {
         width: 100%;
     }
+    
+  .carousel-cell {
+    width: 100%;}
 
     .main-menu {
         position: fixed;
