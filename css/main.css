@@ -193,6 +193,14 @@ body {
     margin: 0 auto;
 }
 
+.col-3 img{
+    transition: transform .2s;
+}
+
+.col-3 img:hover{
+    transform:scale(1.1)
+}
+
 
 
 .search-button:hover .absolute {
