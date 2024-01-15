@@ -688,6 +688,7 @@ section{
     padding-top: 4rem;
 }
 
+
 .float-left-footer {
     width: 50%;
     margin-top: 30px;
@@ -910,6 +911,11 @@ footer {
     .footer-float {
         flex-direction: column;
     }
+    #footer .row .col-4,#footer .row .col-2{
+        width: 100%;
+        
+    }
+   
 
 
 
