@@ -51,8 +51,8 @@ body {
 .logo img {
     max-height: 44px;
     width: 173px;
-    margin-left: 10px;
-    margin-top: 5px;
+    /* margin-left: 10px;
+    margin-top: 5px; */
 }
 
 .main-menu {
@@ -157,7 +157,7 @@ body {
 }
 
 .home-page-mobile{
-    position: absolute;
+    display: none;
 }
 
 
@@ -785,7 +785,7 @@ footer {
     margin-top: 10px;
 }
 .home-page-mobile{
-    position: relative;
+    display: block;
 }
 .home-page-pc{
     display: none;
