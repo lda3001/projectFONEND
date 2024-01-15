@@ -196,6 +196,7 @@ body {
 .typing {
     width: 50%;
     margin: 0 auto;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .col-3 img {
@@ -888,7 +889,7 @@ footer {
 
     .progress-container {
         position: fixed;
-        top: 39px;
+       
         left: 0;
         z-index: 3;
     }
