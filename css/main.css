@@ -156,10 +156,11 @@ body {
     color: var(--primary-color);
 }
 
-.abso {
+.home-page-mobile{
     position: absolute;
-
 }
+
+
 
 .effect-sparkle {
     background-image: url(../images/sparkle1.png), url(../images/sparkle2.png);
@@ -471,7 +472,7 @@ section{
 .paragraph{
     min-height: 200px;
 }
-.text-center a{
+.trainning .text-center a,.job .text-center a{
     text-decoration: none;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -763,13 +764,18 @@ footer {
 
 
     }
-    
-/* .carousel-item img {
-    object-fit: cover;
-    clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
-} */
+    .flickity-prev-next-button.previous {
+        left: 0px !important;
+    }
+    .flickity-prev-next-button.next {
+        right: 0px !important;
+    }
+    .typing{
+        width: 70%;
+    }
+
 .paragraph{
-    min-height: 296px;
+    min-height: 344px;
 }
 .trainning .col-3{
     width :100%;
@@ -777,6 +783,12 @@ footer {
 .statictic li {
     width:47%;
     margin-top: 10px;
+}
+.home-page-mobile{
+    position: relative;
+}
+.home-page-pc{
+    display: none;
 }
     .bars {
         display: inline-block;
@@ -859,7 +871,12 @@ footer {
         left: 0;
         z-index: 3;
     }
-
+    .teachers .text-center{
+        font-size: 65%;
+    }
+    .job .text-center{
+        min-height: 64px;
+    }
     .col-img {
         width: 100%;
         margin-bottom: 30px;
