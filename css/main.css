@@ -498,7 +498,7 @@ section {
     margin-right: 10px;
     background-size: 100%;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    filter: brightness(0.3);
 
     border-radius: 5px;
 
@@ -519,6 +519,7 @@ section {
 
 .carousel-cell.is-selected {
     opacity: var(--black) !important;
+    filter: none;
 
 }
 
